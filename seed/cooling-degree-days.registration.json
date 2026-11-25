@@ -1,0 +1,14 @@
+{
+  "_comment": "Draft registration in the shape LAND_INTAKE.md §5 shows for climate-averages. Not yet run through the VillageOS seed validator. It fetches NASA POWER's cooling degree days above 18.3 °C and writes coolingDegreeDaysPerYear onto the Site, writing nothing where POWER answers nothing.",
+  "name": "cooling-degree-days",
+  "properties": {
+    "url": "https://power.larc.nasa.gov/api/temporal/climatology/point?parameters=CDD18_3&community=RE&latitude={latitude}&longitude={longitude}&format=JSON",
+    "httpMethod": "GET",
+    "responseTransform": "($cdd := properties.parameter.CDD18_3.ANN; {\"properties\": $cdd >= 0 ? {\"coolingDegreeDaysPerYear\": $cdd} : {}})"
+  },
+  "relationships": [
+    { "subject": "cooling-degree-days", "predicate": "is", "target": "Endpoint" },
+    { "subject": "NASA POWER cooling degree days", "predicate": "resolvedBy", "target": "cooling-degree-days" },
+    { "subject": "NASA POWER cooling degree days", "predicate": "covers", "target": "Earth" }
+  ]
+}

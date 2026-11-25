@@ -1,0 +1,414 @@
+[
+  {
+    "site": "Dubai, UAE",
+    "profile": "uae",
+    "villageosToday": {
+      "water": {
+        "harvestM3PerYear": 5967.8928,
+        "domesticDemandM3PerYear": 17600.0,
+        "irrigationDemandM3PerYear": 40800.0,
+        "totalDemandM3PerYear": 58400.0,
+        "percentOfWaterDemand": 10.218994520547945,
+        "domesticCoveredPercent": 33.90848181818182,
+        "irrigationCoveredPercent": 0.0,
+        "shortfallM3PerYear": 52432.1072
+      },
+      "energy": {
+        "solarPvAreaM2": 3168.0000000000005,
+        "generationMwhPerYear": 859.5390343478404,
+        "consumptionMwhPerYear": 800.0,
+        "percentOfConsumption": 107.44237929348004
+      }
+    },
+    "villageosWithRegionalDemand": {
+      "water": {
+        "harvestM3PerYear": 5967.8928,
+        "domesticDemandM3PerYear": 64288.0,
+        "irrigationDemandM3PerYear": 40800.0,
+        "totalDemandM3PerYear": 105088.0,
+        "percentOfWaterDemand": 5.678947929354446,
+        "domesticCoveredPercent": 9.283058735689396,
+        "irrigationCoveredPercent": 0.0,
+        "shortfallM3PerYear": 99120.1072
+      },
+      "energy": {
+        "solarPvAreaM2": 3168.0000000000005,
+        "generationMwhPerYear": 859.5390343478404,
+        "consumptionMwhPerYear": 800.0,
+        "percentOfConsumption": 107.44237929348004
+      }
+    },
+    "climatePack": {
+      "water": {
+        "sources": {
+          "rain": {
+            "m3PerYear": 5967.8928,
+            "kwhPerM3": 0.0,
+            "mwhPerYear": 0.0,
+            "toDomesticM3PerYear": 5967.8928,
+            "toIrrigationM3PerYear": 0.0
+          },
+          "groundwater": {
+            "m3PerYear": 0.0,
+            "kwhPerM3": 0.327,
+            "mwhPerYear": 0.0,
+            "toDomesticM3PerYear": 0.0,
+            "toIrrigationM3PerYear": 0.0
+          },
+          "reuse": {
+            "m3PerYear": 40800.0,
+            "kwhPerM3": 1.5,
+            "mwhPerYear": 61.2,
+            "toDomesticM3PerYear": 0.0,
+            "toIrrigationM3PerYear": 40800.0
+          },
+          "desalination": {
+            "m3PerYear": 58320.1072,
+            "kwhPerM3": 4.0,
+            "mwhPerYear": 233.28042879999998,
+            "toDomesticM3PerYear": 58320.1072,
+            "toIrrigationM3PerYear": 0.0
+          }
+        },
+        "domesticDemandM3PerYear": 64288.0,
+        "irrigationDemandM3PerYear": 40800.0,
+        "domesticCoveredPercent": 100.0,
+        "irrigationCoveredPercent": 100.0,
+        "percentOfWaterDemand": 100.0,
+        "shortfallM3PerYear": 0.0,
+        "desalinationCapacityM3PerDay": 159.78111561643834,
+        "groundwaterPumpKwhPerM3": 0.327
+      },
+      "energy": {
+        "generationMwhPerYear": 859.5390343478404,
+        "baseConsumptionMwhPerYear": 800.0,
+        "coolingMwhPerYear": 290.16345600000005,
+        "coolingKwhPerPersonPerYear": 906.7608000000001,
+        "waterMwhPerYear": 294.48042879999997,
+        "consumptionMwhPerYear": 1384.6438848,
+        "percentOfConsumption": 62.0765413969234,
+        "arrayAreaForNetPositiveM2": 5103.377103024318
+      },
+      "assumptions": {
+        "runoffCoefficient": {
+          "value": 0.8,
+          "unit": "fraction",
+          "source": "VillageOS Field Guide, Appendix D (no source recorded there)",
+          "sourced": true
+        },
+        "perCapitaConsumptionM3": {
+          "value": 200.9,
+          "unit": "m\u00b3/person/yr",
+          "source": "Khaleej Times (22 Mar 2016), citing FEWA: 550 L/day per UAE resident",
+          "sourced": true
+        },
+        "irrigationDemandM3PerHectarePerYear": {
+          "value": 5000.0,
+          "unit": "m\u00b3/ha/yr",
+          "source": "VillageOS Field Guide, Appendix D (no source recorded there)",
+          "sourced": true
+        },
+        "energyPerPersonKwhPerYear": {
+          "value": 2500.0,
+          "unit": "kWh/person/yr",
+          "source": "VillageOS Field Guide, Appendix D (no source recorded there)",
+          "sourced": true
+        },
+        "moduleEfficiency": {
+          "value": 0.17,
+          "unit": "fraction",
+          "source": "VillageOS Field Guide, Appendix D (no source recorded there)",
+          "sourced": true
+        },
+        "performanceRatio": {
+          "value": 0.77,
+          "unit": "fraction",
+          "source": "VillageOS Field Guide, Appendix D (no source recorded there)",
+          "sourced": true
+        },
+        "arrayCoverageFraction": {
+          "value": 0.06,
+          "unit": "fraction",
+          "source": "VillageOS Field Guide, Appendix D (no source recorded there)",
+          "sourced": true
+        },
+        "desalinationKwhPerM3": {
+          "value": 4.0,
+          "unit": "kWh/m\u00b3",
+          "source": "Schunke et al. (2020), Frontiers in Sustainable Cities 2:9 \u2014 typical SWRO 3.5\u20134.5 kWh/m\u00b3; midpoint taken",
+          "sourced": true
+        },
+        "reuseTreatmentKwhPerM3": {
+          "value": 1.5,
+          "unit": "kWh/m\u00b3",
+          "source": "Schunke et al. (2020) \u2014 indirect potable reuse 1.5\u20132.0 kWh/m\u00b3; low end taken, since irrigation reuse needs less treatment",
+          "sourced": true
+        },
+        "wastewaterReturnFraction": {
+          "value": 0.8,
+          "unit": "fraction of domestic water",
+          "source": "No source recorded \u2014 to be sourced (a common design value)",
+          "sourced": false
+        },
+        "reuseRecoveryFraction": {
+          "value": 0.9,
+          "unit": "fraction of wastewater",
+          "source": "No source recorded \u2014 to be sourced",
+          "sourced": false
+        },
+        "groundwaterSustainableYieldM3PerYear": {
+          "value": 0.0,
+          "unit": "m\u00b3/yr",
+          "source": "Site-specific; 0 until a hydrogeological figure is stated for the site",
+          "sourced": true
+        },
+        "groundwaterLiftMetres": {
+          "value": 60.0,
+          "unit": "m",
+          "source": "No source recorded \u2014 to be sourced",
+          "sourced": false
+        },
+        "pumpEfficiency": {
+          "value": 0.5,
+          "unit": "fraction",
+          "source": "No source recorded \u2014 to be sourced",
+          "sourced": false
+        },
+        "floorAreaPerPersonM2": {
+          "value": 30.0,
+          "unit": "m\u00b2/person",
+          "source": "No source recorded \u2014 to be sourced",
+          "sourced": false
+        },
+        "envelopeConductanceWPerM2K": {
+          "value": 1.0,
+          "unit": "W/(m\u00b2 floor\u00b7K)",
+          "source": "No source recorded \u2014 to be sourced",
+          "sourced": false
+        },
+        "coolingCop": {
+          "value": 3.0,
+          "unit": "kWh cooling per kWh electricity",
+          "source": "No source recorded \u2014 to be sourced",
+          "sourced": false
+        }
+      }
+    },
+    "climate": {
+      "rainfallMmPerYear": 84.00750000000001,
+      "solarKwhPerM2PerYear": 2072.7207000000003,
+      "coolingDegreeDays": 3778.17,
+      "seawaterAccess": true,
+      "coordinates": [
+        55.271,
+        25.205
+      ]
+    }
+  },
+  {
+    "site": "Jaipur, India",
+    "profile": "india-urban",
+    "villageosToday": {
+      "water": {
+        "harvestM3PerYear": 37364.19840000001,
+        "domesticDemandM3PerYear": 17600.0,
+        "irrigationDemandM3PerYear": 40800.0,
+        "totalDemandM3PerYear": 58400.0,
+        "percentOfWaterDemand": 63.97979178082194,
+        "domesticCoveredPercent": 100.0,
+        "irrigationCoveredPercent": 48.44166274509806,
+        "shortfallM3PerYear": 21035.80159999999
+      },
+      "energy": {
+        "solarPvAreaM2": 3168.0000000000005,
+        "generationMwhPerYear": 823.2932299284003,
+        "consumptionMwhPerYear": 800.0,
+        "percentOfConsumption": 102.91165374105003
+      }
+    },
+    "villageosWithRegionalDemand": {
+      "water": {
+        "harvestM3PerYear": 37364.19840000001,
+        "domesticDemandM3PerYear": 15776.0,
+        "irrigationDemandM3PerYear": 40800.0,
+        "totalDemandM3PerYear": 56576.0,
+        "percentOfWaterDemand": 66.04248868778282,
+        "domesticCoveredPercent": 100.0,
+        "irrigationCoveredPercent": 52.91225098039217,
+        "shortfallM3PerYear": 19211.80159999999
+      },
+      "energy": {
+        "solarPvAreaM2": 3168.0000000000005,
+        "generationMwhPerYear": 823.2932299284003,
+        "consumptionMwhPerYear": 800.0,
+        "percentOfConsumption": 102.91165374105003
+      }
+    },
+    "climatePack": {
+      "water": {
+        "sources": {
+          "rain": {
+            "m3PerYear": 37364.19840000001,
+            "kwhPerM3": 0.0,
+            "mwhPerYear": 0.0,
+            "toDomesticM3PerYear": 15776.0,
+            "toIrrigationM3PerYear": 21588.19840000001
+          },
+          "groundwater": {
+            "m3PerYear": 0.0,
+            "kwhPerM3": 0.327,
+            "mwhPerYear": 0.0,
+            "toDomesticM3PerYear": 0.0,
+            "toIrrigationM3PerYear": 0.0
+          },
+          "reuse": {
+            "m3PerYear": 11358.720000000001,
+            "kwhPerM3": 1.5,
+            "mwhPerYear": 17.03808,
+            "toDomesticM3PerYear": 0.0,
+            "toIrrigationM3PerYear": 11358.720000000001
+          },
+          "desalination": {
+            "m3PerYear": 0.0,
+            "kwhPerM3": 4.0,
+            "mwhPerYear": 0.0,
+            "toDomesticM3PerYear": 0.0,
+            "toIrrigationM3PerYear": 0.0
+          }
+        },
+        "domesticDemandM3PerYear": 15776.0,
+        "irrigationDemandM3PerYear": 40800.0,
+        "domesticCoveredPercent": 100.0,
+        "irrigationCoveredPercent": 80.75225098039218,
+        "percentOfWaterDemand": 86.1194117647059,
+        "shortfallM3PerYear": 7853.08159999999,
+        "desalinationCapacityM3PerDay": 0.0,
+        "groundwaterPumpKwhPerM3": 0.327
+      },
+      "energy": {
+        "generationMwhPerYear": 823.2932299284003,
+        "baseConsumptionMwhPerYear": 800.0,
+        "coolingMwhPerYear": 232.255488,
+        "coolingKwhPerPersonPerYear": 725.7984,
+        "waterMwhPerYear": 17.03808,
+        "consumptionMwhPerYear": 1049.293568,
+        "percentOfConsumption": 78.46166745285912,
+        "arrayAreaForNetPositiveM2": 4037.6404209143006
+      },
+      "assumptions": {
+        "runoffCoefficient": {
+          "value": 0.8,
+          "unit": "fraction",
+          "source": "VillageOS Field Guide, Appendix D (no source recorded there)",
+          "sourced": true
+        },
+        "perCapitaConsumptionM3": {
+          "value": 49.3,
+          "unit": "m\u00b3/person/yr",
+          "source": "CPHEEO design norm: 135 L/day for cities with sewerage (NCRPB repository, clause 2.2.8)",
+          "sourced": true
+        },
+        "irrigationDemandM3PerHectarePerYear": {
+          "value": 5000.0,
+          "unit": "m\u00b3/ha/yr",
+          "source": "VillageOS Field Guide, Appendix D (no source recorded there)",
+          "sourced": true
+        },
+        "energyPerPersonKwhPerYear": {
+          "value": 2500.0,
+          "unit": "kWh/person/yr",
+          "source": "VillageOS Field Guide, Appendix D (no source recorded there)",
+          "sourced": true
+        },
+        "moduleEfficiency": {
+          "value": 0.17,
+          "unit": "fraction",
+          "source": "VillageOS Field Guide, Appendix D (no source recorded there)",
+          "sourced": true
+        },
+        "performanceRatio": {
+          "value": 0.77,
+          "unit": "fraction",
+          "source": "VillageOS Field Guide, Appendix D (no source recorded there)",
+          "sourced": true
+        },
+        "arrayCoverageFraction": {
+          "value": 0.06,
+          "unit": "fraction",
+          "source": "VillageOS Field Guide, Appendix D (no source recorded there)",
+          "sourced": true
+        },
+        "desalinationKwhPerM3": {
+          "value": 4.0,
+          "unit": "kWh/m\u00b3",
+          "source": "Schunke et al. (2020), Frontiers in Sustainable Cities 2:9 \u2014 typical SWRO 3.5\u20134.5 kWh/m\u00b3; midpoint taken",
+          "sourced": true
+        },
+        "reuseTreatmentKwhPerM3": {
+          "value": 1.5,
+          "unit": "kWh/m\u00b3",
+          "source": "Schunke et al. (2020) \u2014 indirect potable reuse 1.5\u20132.0 kWh/m\u00b3; low end taken, since irrigation reuse needs less treatment",
+          "sourced": true
+        },
+        "wastewaterReturnFraction": {
+          "value": 0.8,
+          "unit": "fraction of domestic water",
+          "source": "No source recorded \u2014 to be sourced (a common design value)",
+          "sourced": false
+        },
+        "reuseRecoveryFraction": {
+          "value": 0.9,
+          "unit": "fraction of wastewater",
+          "source": "No source recorded \u2014 to be sourced",
+          "sourced": false
+        },
+        "groundwaterSustainableYieldM3PerYear": {
+          "value": 0.0,
+          "unit": "m\u00b3/yr",
+          "source": "Site-specific; 0 until a hydrogeological figure is stated for the site",
+          "sourced": true
+        },
+        "groundwaterLiftMetres": {
+          "value": 60.0,
+          "unit": "m",
+          "source": "No source recorded \u2014 to be sourced",
+          "sourced": false
+        },
+        "pumpEfficiency": {
+          "value": 0.5,
+          "unit": "fraction",
+          "source": "No source recorded \u2014 to be sourced",
+          "sourced": false
+        },
+        "floorAreaPerPersonM2": {
+          "value": 30.0,
+          "unit": "m\u00b2/person",
+          "source": "No source recorded \u2014 to be sourced",
+          "sourced": false
+        },
+        "envelopeConductanceWPerM2K": {
+          "value": 1.0,
+          "unit": "W/(m\u00b2 floor\u00b7K)",
+          "source": "No source recorded \u2014 to be sourced",
+          "sourced": false
+        },
+        "coolingCop": {
+          "value": 3.0,
+          "unit": "kWh cooling per kWh electricity",
+          "source": "No source recorded \u2014 to be sourced",
+          "sourced": false
+        }
+      }
+    },
+    "climate": {
+      "rainfallMmPerYear": 525.96,
+      "solarKwhPerM2PerYear": 1985.316375,
+      "coolingDegreeDays": 3024.16,
+      "seawaterAccess": false,
+      "coordinates": [
+        75.787,
+        26.912
+      ]
+    }
+  }
+]

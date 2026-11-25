@@ -1,0 +1,5 @@
+# The shared VillageOS service code (FastAPI, uvicorn, httpx, PyJWT), installed from the VillageOS-API repository.
+# Place this folder in VillageOS-API as vos.Service.Python.ClimatePack so the path below resolves.
+-e ../vos.Service.Python.Shared
+# Tests
+pytest>=8.0
